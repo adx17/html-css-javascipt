@@ -1,0 +1,108 @@
+/* Importing beautiful fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap');
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the body (background, font, alignment) */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('https://cdn.vectorstock.com/i/500p/56/34/ramadan-kareem-background-hanging-lanterns-vector-25165634.jpg') ;
+    text-align: center;
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+/* Main container styling */
+.container {
+    background: rgba(0, 0, 0, 0.6); /* Dark transparent background */
+    padding: 80px;
+    border-radius: 15px; /* Soft rounded corners */
+    width: 90%;
+    max-width: 700px;
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.6); /* Soft glowing golden shadow */
+    border: 2px solid rgba(255, 215, 0, 0.8); /* Subtle golden border */
+    animation: fadeIn 1.5s ease-in-out; /* Fade-in effect */
+}
+
+/* Styling for the crescent moon */
+.moon {
+    width: 200px;  /* Adjust size */
+    height: 200px;
+	display: block;
+	margin:0 auto 20px;
+    background: url('https://i.pinimg.com/564x/1f/ca/26/1fca2676f648b625c6ab57d3003204ee.jpg') no-repeat center center/cover; /* Use custom moon image */
+    border-radius: 100%;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.8); /* Adds a soft glowing effect */
+}
+
+
+
+/* Styling the main heading */
+h1 {
+    font-family: 'Great Vibes', cursive; /* Elegant Arabic-style script */
+    font-size: 2.8em;
+    color: #FFD700; /* Gold text */
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.8); /* Glowing effect */
+    animation: glow 1.5s infinite alternate; /* Glow animation */
+}
+
+/* Glowing text animation */
+@keyframes glow {
+    0% { text-shadow: 0 0 5px #FFD700; }
+    100% { text-shadow: 0 0 20px #FFD700, 0 0 30px #FFD700; }
+}
+
+/* Moon glowing animation */
+@keyframes moonGlow {
+    0% { filter: drop-shadow(0 0 5px #FFD700); }
+    100% { filter: drop-shadow(0 0 20px #FFD700); }
+}
+
+/* Styling the paragraph (message) */
+p {
+    font-size: 1.2em;
+    margin: 20px 0;
+    line-height: 1.6; /* Spacing for better readability */
+}
+
+/* Styling the button */
+button {
+    background: linear-gradient(135deg, #FFD700, #FFC107); /* Gold gradient */
+    color: #333; /* Dark text for contrast */
+    font-size: 1.3em;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+/* Button hover effect */
+button:hover {
+    background: #fff; /* Turns white */
+    color: #000; /* Turns black */
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.9); /* Glowing effect */
+}
+
+/* Fade-in animation for the container */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
